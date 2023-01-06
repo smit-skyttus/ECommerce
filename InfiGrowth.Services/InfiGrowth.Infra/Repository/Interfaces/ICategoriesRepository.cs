@@ -9,6 +9,10 @@ namespace InfiGrowth.Infra.Repository.Interfaces
 {
     public interface ICategoriesRepository
     {
-        Task<List<Categories>> CategoriesGetCategoriesAsync();
+        Task<List<Categories>> GetCategories();
+        Task<Categories> CreateCategory(Categories categories);
+        Task<Categories> UpdateCategory(Categories categories);
+        Task<Categories> DeleteCategory(int categoryId);
+        Task<Categories> GetCategoriesByCategoryId(int categoryId);
     }
 }
