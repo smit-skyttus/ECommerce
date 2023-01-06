@@ -13,6 +13,7 @@ namespace InfiGrowth.Services.Extensions
             builder.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
                 
             builder.AddScoped<ICustomersService, CustomersService>();
+            builder.AddScoped<IProductService, ProductService>();
             
             return builder;
         }
