@@ -10,7 +10,7 @@ namespace InfiGrowth.Entity.Manage
 {
     public class Deliveries
     {
-        [Key]
+        [Key] 
         public int DeliveriesId { get; set; }
         [ForeignKey("CustomerId")]
         public Customers customers { get; set; }
