@@ -15,6 +15,18 @@ namespace InfiGrowth.Services.Mapper
             CreateMap<InfiGrowth.Models.Models.CustomersResponseModel, Customers>();
             CreateMap<Customers, InfiGrowth.Models.Models.CustomersResponseModel>();
 
+            CreateMap<InfiGrowth.Models.Models.CategoriesRequestModel, Categories>();
+            CreateMap<Categories, InfiGrowth.Models.Models.CategoriesRequestModel>();
+
+            CreateMap<InfiGrowth.Models.Models.CategoriesResponseModel, Categories>();
+            CreateMap<Categories, InfiGrowth.Models.Models.CategoriesResponseModel>();
+
+            CreateMap<InfiGrowth.Models.Models.DeliveriesResponseModel, Deliveries>();
+            CreateMap<Deliveries, InfiGrowth.Models.Models.DeliveriesResponseModel>();
+
+            CreateMap<InfiGrowth.Models.Models.DeliveriesRequestModel, Deliveries>();
+            CreateMap<Deliveries, InfiGrowth.Models.Models.DeliveriesRequestModel>();
+
             CreateMap<InfiGrowth.Models.Models.ProductsResponseModel, Products>();
             CreateMap<Products, InfiGrowth.Models.Models.ProductsResponseModel>();
 

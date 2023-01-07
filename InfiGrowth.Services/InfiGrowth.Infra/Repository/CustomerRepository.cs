@@ -37,7 +37,7 @@ namespace InfiGrowth.Infra.Repository
             return result;
 
         }
-
+                    
         public async Task<List<Customers>> GetAllCustomers()
         {
             return await _context.Customers.ToListAsync();
@@ -46,7 +46,7 @@ namespace InfiGrowth.Infra.Repository
         public async Task<Customers> GetCustomerById(int customerId)
         {
             return await _context.Customers.FindAsync(customerId);
-        }
+        }       
 
         public async Task<Customers> UpdateCustomer(Customers customer)
         {
