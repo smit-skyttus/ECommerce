@@ -14,6 +14,7 @@ namespace InfiGrowth.Services.Extensions
                 
             builder.AddScoped<ICustomersService, CustomersService>();
             builder.AddScoped<ICategoriesService, CategoriesService>();
+            builder.AddScoped<IDeliveriesService, DeliveriesService>();
             
             return builder;
         }

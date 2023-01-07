@@ -8,7 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using entity = InfiGrowth.Entity.Manage;
+    using entity = InfiGrowth.Entity.Manage;
 
 namespace InfiGrowth.Services.Services
 {
