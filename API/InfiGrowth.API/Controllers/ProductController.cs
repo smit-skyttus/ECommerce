@@ -17,9 +17,9 @@ namespace InfiGrowth.API.Controllers
         }
 
         [HttpGet]
-        public async Task<List<ProductsResponseModel>> GetAllProducts()
+        public async Task<IActionResult> GetAllProducts()
         {
-            return await _productService.GetAllProducts();
+            return Ok(await _productService.GetAllProducts());
         }
         [HttpPost]
         public async Task<ProductsResponseModel> CreateProduct(ProductRequestModel product)

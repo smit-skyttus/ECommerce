@@ -1,4 +1,5 @@
-﻿using InfiGrowth.Models.Models;
+﻿using InfiGrowth.Entity.Manage;
+using InfiGrowth.Models.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

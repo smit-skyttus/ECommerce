@@ -39,7 +39,8 @@ namespace InfiGrowth.Services.Services
 
         public async Task<List<ProductsResponseModel>> GetAllProducts()
         {
-            return  _mapper.Map<List<ProductsResponseModel>>(await _productRepository.GetAllProducts());
+            return _mapper.Map<List<ProductsResponseModel>>(await _productRepository.GetAllProducts());
+            //return await _productRepository.GetAllProducts();
         }
 
         public async Task<ProductsResponseModel> GetProductById(int productId)

@@ -9,7 +9,7 @@ namespace InfiGrowth.Models.Models
 {
     public class ProductRequestModel
     {
-        public int CategoryId { get; set; }
+        public int CategoryId { get; set; } 
         public string ProductName { get; set; }
     }
 }

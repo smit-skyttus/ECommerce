@@ -12,6 +12,7 @@ namespace InfiGrowth.Entity.Manage
     {
         [Key]
         public int PaymentId { get; set; }
+        public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Products products { get; set; }
         public DateTime Date { get; set; }
