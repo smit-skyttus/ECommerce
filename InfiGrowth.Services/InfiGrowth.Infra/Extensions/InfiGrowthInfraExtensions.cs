@@ -24,6 +24,8 @@ namespace InfiGrowth.Infra.Extensions
             builder.AddScoped<ICategoriesRepository, CategoriesRepository>();
             builder.AddScoped<IDeliveriesRepository, DeliveriesRepository>();
             builder.AddScoped<IProductRepository, ProductRepository>();
+            builder.AddScoped<ISellerRepository, SellerRepository>();
+            builder.AddScoped<IShoppingRpository, ShoppingRepository>();
    
             return builder;
         }
@@ -42,6 +44,8 @@ namespace InfiGrowth.Infra.Extensions
             builder.AddTransient<ICategoriesRepository, CategoriesRepository>();
             builder.AddTransient<IDeliveriesRepository, DeliveriesRepository>();
             builder.AddTransient<IProductRepository, ProductRepository>();
+            builder.AddTransient<ISellerRepository, SellerRepository>();
+            builder.AddTransient<IShoppingRpository, ShoppingRepository>();
           
             return builder;
 
