@@ -45,6 +45,18 @@ namespace InfiGrowth.Services.Mapper
             CreateMap<InfiGrowth.Models.Models.ShoppingResponseModel, ShoppingOrder>();
             CreateMap<ShoppingOrder, InfiGrowth.Models.Models.ShoppingResponseModel>();
 
+
+            CreateMap<InfiGrowth.Models.Models.PaymentResponseModel, Payment>();
+            CreateMap<Payment, InfiGrowth.Models.Models.PaymentResponseModel>();
+
+            CreateMap<InfiGrowth.Models.Models.PaymentRequestModel, Payment>();
+            CreateMap<Payment, InfiGrowth.Models.Models.PaymentRequestModel>();
+
+            CreateMap<InfiGrowth.Models.Models.TransactionReportsResponseModel, TransactionReports>();
+            CreateMap<TransactionReports, InfiGrowth.Models.Models.TransactionReportsResponseModel>();
+
+            CreateMap<InfiGrowth.Models.Models.TransactionReportsRequestModel, TransactionReports>();
+            CreateMap<TransactionReports, InfiGrowth.Models.Models.TransactionReportsRequestModel>();
         }
     }
 }
