@@ -16,7 +16,9 @@ namespace InfiGrowth.Services.Extensions
             builder.AddScoped<ICategoriesService, CategoriesService>();
             builder.AddScoped<IDeliveriesService, DeliveriesService>();
             builder.AddScoped<IProductService, ProductService>();
-            
+            builder.AddScoped<IPaymentService, PaymentService>();
+            builder.AddScoped<ITransactionReportsService, TransactionReportsService>();
+
             return builder;
         }
     }
