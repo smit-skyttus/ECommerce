@@ -12,8 +12,9 @@ namespace InfiGrowth.Entity.Manage
     {
         [Key]
         public int ProductId { get; set; }
+        public int CategoryId { get; set; }
         [ForeignKey("CategoryId")] 
-        public Categories Category { get; set; }
+        public virtual Categories Category { get; set; }
         public string ProductName { get; set; }
     }
 }

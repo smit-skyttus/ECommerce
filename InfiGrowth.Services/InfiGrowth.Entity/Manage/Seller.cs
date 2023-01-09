@@ -12,6 +12,7 @@ namespace InfiGrowth.Entity.Manage
     {
         [Key]
         public int SellerId { get; set; }
+        public int ProductId { get; set; }
         [ForeignKey("ProductId")]
         public Products products { get; set; }
         public string Name { get; set; }

@@ -26,6 +26,12 @@ namespace InfiGrowth.Services.Mapper
 
             CreateMap<InfiGrowth.Models.Models.DeliveriesRequestModel, Deliveries>();
             CreateMap<Deliveries, InfiGrowth.Models.Models.DeliveriesRequestModel>();
+
+            CreateMap<InfiGrowth.Models.Models.ProductsResponseModel, Products>();
+            CreateMap<Products, InfiGrowth.Models.Models.ProductsResponseModel>();
+
+            CreateMap<InfiGrowth.Models.Models.ProductRequestModel, Products>();
+            CreateMap<Products, InfiGrowth.Models.Models.ProductRequestModel>();
         }
     }
 }
