@@ -28,6 +28,7 @@ namespace InfiGrowth.Infra.Repository
         public async Task<Products> DeleteProducts(int productId)
         {
             var result = await GetProductById(productId);
+            _context.Products.Remove(result);
             await _context.SaveChangesAsync();
             return result;
         }
